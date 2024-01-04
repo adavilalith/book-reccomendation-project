@@ -11,8 +11,8 @@
   <body>
   <!-- <body style="height: blackvh;background:linear-gradient(#e66465, #9198e5)"> -->
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/" ><strong>Booky</strong></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="height: 10vh;">
+        <a class="navbar-brand" href="/" style="font-size: 4vh;"><strong>Booky</strong></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -48,7 +48,7 @@
             {% if data%}
                  {% for i in data %}
                 <div class="col-md-3" style="margin-top:50px">
-                    <div class="card h-100">
+                    <div class="card h-100" >
                         <div class="card-body">
                             <img class="card-img-top" src="{{i[2]}}">
                             <h3 class="text-black">{{i[0]}}</h3>

@@ -39,7 +39,7 @@ def top_ui():
                            author=list(popularity_df['Book-Author'].values),
                            image=list(popularity_df['Image-URL-M'].values),
                            no_ratings=list(popularity_df['num_ratings'].values),
-                           rating=list(popularity_df['avg_rating'].values)
+                           rating=list(format(i,".2f") for i in popularity_df['avg_rating'].values)
                            )
 
 if __name__ == '__main__':
