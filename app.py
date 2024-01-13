@@ -21,7 +21,7 @@ def index_ui():
 def recommend():
     user_input = request.form.get('user_input')
     idx = np.where(pt.index==user_input)[0][0]
-        items = sorted(list(enumerate(scores[idx])),key = lambda x:x[1],reverse=True)[1:9]
+    items = sorted(list(enumerate(scores[idx])),key = lambda x:x[1],reverse=True)[1:9]
     data=[]
     
     for i in items:            
