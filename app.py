@@ -79,5 +79,13 @@ def top50_api():
                     })
     return jsonify(res),200
 
+@app.route('/reccomended_books_10',methods=['post'])
+def reccomended_books_10():
+    
+    
+    return request.json,200
+    return jsonify({'msg':"hi"}),200
+
+
 if __name__ == '__main__':
     app.run(debug=True)
